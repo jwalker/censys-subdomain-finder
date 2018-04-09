@@ -95,7 +95,7 @@ $ python censys_subdomain_finder.py example.com
 ## Usage
 
 ```
-usage: censys_subdomain_finder.py [-h] [-o OUTPUT_FILE]
+usage: censys_subdomain_finder.py [-h] [-o OUTPUT_FILE] [--resolve]
                                   [--censys-api-id CENSYS_API_ID]
                                   [--censys-api-secret CENSYS_API_SECRET]
                                   domain
@@ -108,6 +108,8 @@ optional arguments:
   -o OUTPUT_FILE, --output OUTPUT_FILE
                         A file to output the list of subdomains to (default:
                         None)
+  --resolve
+                        Resolve domains to IPs using host command - not stealth
   --censys-api-id CENSYS_API_ID
                         Censys API ID. Can also be defined using the
                         CENSYS_API_ID environment variable (default: None)
